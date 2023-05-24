@@ -1,21 +1,59 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>¿Cuchillo?</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Santiago Torres Borda - Researcher in Communication Networks</title>
+  <link rel="stylesheet" href="styles.css"> <!-- Optional: Link to your custom CSS file -->
 </head>
 <body>
-	<h1>¿Se puede echar cuchillo?</h1>
-	<p id="result"></p>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-	<script>
-		var currentDate = new Date().getDate(); // Get the current day of the month
-		var isEven = (currentDate % 2 === 0); // Check if it's even
+  <main>
+    <section id="about">
+	  <img src="img/47422238.jpeg" alt="Profile Picture" width="200" height="200">
+      <h1>About</h1>
+      <p>Currently working on my Ph.D. thesis about time sensitive networks and their performance at ISAE SUPAERO in Toulouse, France. I focus mainly on the performance evaluation of shapers defined in IEEE 802.1Q otherwise known as Time Sensitive Networking or TSN. I use tools such as Network Calculus to perform my work. My main interests are asynchronous mechanisms, compositional approaches and optimization for the use of the latter. All of this is done in the context of aerospatial systems such as airplanes, satellites, etc.</p>
+    </section>
 
-		if (isEven) {
-			document.getElementById("result").innerHTML = "Hoy es un día par, por favor abstenerse de echar cuchillo";
-		} else {
-			document.getElementById("result").innerHTML = "Hoy es un día impar, tiene permitido echar cuchillo.";
-		}
-	</script>
+    <section id="research">
+      <h1>Research</h1>
+      <p>Some non exhaustive key words that describe well my topics of interest are : CBS, ATS, TSN, network design, network optimization, network configuration, embedded systems.</p>
+    </section>
+
+    <section id="publications">
+      <h1>Publications</h1>
+      <ul>
+        <li>An evaluation of software-based TSN traffic shapers using Linux tc, S. Torres-Borda & J. Ermont, WFCS 2022 (<href>DOI: 10.1109/WFCS53837.2022.9779163</href>)</li>
+      </ul>
+    </section>
+	<section id="Education">
+		<h1>Education</h1>
+		<ul>
+		  <li>B.Sc. Electrical Engineering at Pontificia Universidad Javeriana, Bogotá, Colombia (2016-2022)</li>
+		  <li>Diplôme d'ingénieur in Digital Sciences and Telecommunications at ENSEEIHT, Toulouse, France (2020-2022)</li>
+		  <li>M.Sc. Embedded Networks and IoT at ENSEEIHT/INSA Toulouse, Toulouse, France (2021-2022)</li>
+		</ul>
+	  </section>
+
+    <section id="contact">
+      <h1>Contact</h1>
+      <p>Personal email: storresb@proton.me</p>
+	  <p>Institutional email: s.torres-borda@isae-supaero.fr</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2023 Santiago Torres Borda</p>
+  </footer>
 </body>
 </html>
